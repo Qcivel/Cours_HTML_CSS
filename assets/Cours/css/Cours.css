@@ -1,5 +1,7 @@
 
-
+body {
+ background-color: rgb(184, 186, 187);
+}
 .sidebar {
   position: fixed;           
   left: 0;
@@ -8,23 +10,39 @@
   height: 100%;
   background-color: #0c0c42;
   color: white;
+  border-radius: 10px;
 
 }
 
 .sidebar a {
-    color: rgb(255, 255, 255);
+    color: rgb(193, 193, 11);
 }
 
-.sidebar li  {
+.sidebar li {
 margin-bottom: 10px;
 
 }
 
+.sidebar h2 {
+text-align: center;
+
+}
+
+
 .main-content {
     margin-left: 250px;
    
+   
 }
 
+.main-content h2,h1 {
+    text-align: center;
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: #0c0c42;
+    color: white;
+   
+}
 .main-content img {
     display: block;
   margin-left: auto;
