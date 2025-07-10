@@ -22,7 +22,7 @@ body {
 }
 
 .sidebar a {
-  color: rgb(193, 193, 11);
+  color: rgba(193, 193, 11,1); /* le 1 permet de modifier la transparence 0.1 transparence max */
 }
 
 .sidebar li {

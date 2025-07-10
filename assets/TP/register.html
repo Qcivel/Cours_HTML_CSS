@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Cours/css/formulaire.css">
+    <title>register</title>
+    
+</head>
+<body>
+<h1>Page d'inscription</h1>
+
+    <div class="formulaire">
+    
+    
+    <form class="inscription" action="login.html">
+        <label for="email">Email :</label> 
+        <input type="email" id="email" name="email" required>
+
+        <label for="mot de passe">Mot de passse :</label>
+        <input type="password" id="nom" name="nom" required>
+
+        <label for="date">Date</label>
+        <input type="date" id="start" name="trip-start" value="2025-07-22" min="1900-01-01"  max="2999-12-31" />
+
+        <label for="Age">Age:</label>
+        <input type="number" id="Age" min="10" max="100" />
+
+        <label for="Bancaire">Identifient bancaire :</label> 
+        <input type="number" id="Identifient bancaire"  placeholder="6052.3505.2015.3505" required>
+        
+        <label for="Bancaire_Iban">Iban :</label> 
+        <input type="number" id="Iban"  placeholder="FR7630001007941234567890185" >
+
+        <label for="Télephone">N° de télephone :</label> 
+        <input type="tel" id="télephone"  placeholder="05.65.75.52.85" pattern="[0-9]{10}" required>
+
+        <label for="sexe">Choose a sexe:</label>
+        <select name="sexe" id="cars">
+        <option value="Homme">Homme</option>
+        <option value="Femme">Femme</option>
+        <option value="Non-binaire">Non-binaire</option>
+        </select>
+
+        <br><button type="submit" value="Submit" > Inscription </button>
+        
+
+    </form>
+    
+   
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+ /*.formulaire {
+
+   
+   margin: auto;
+   margin-top: 100px;
+   flex-direction: column;
+   width: 300px;
+   height: 600px;
+   text-align: center;
+   border: solid 2px ;
+   border-color: rgb(19, 128, 128);
+   border-radius: 10px;
+   background-color: rgb(26, 172, 172);
+   
+}
+ */
+
+ body{
+
+    background-color: rgb(233, 234, 235);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+ }
+
+
+ .inscription {
+
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   width: 500px;
+   margin: auto;
+   border: solid 2px;
+   background-color: rgb(127, 199, 175);
+   border-color: rgb(40, 82, 68);
+   border-radius: 15px;
+   padding: 2cqmax;
+   text-align: center;
+    
+}
+
+button {
+   border-radius: 8px;
+   background-color: rgb(127, 199, 175);
+   color: black;
+   padding: 5px;
+   
+   
+   
+
+}
