@@ -6,9 +6,19 @@
     <title>Test animation</title>
     <style>
 
+body {
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
 
 
 img {
+    
     width: 100px;
     height: 100px;
     border: solid 2px;
@@ -16,9 +26,9 @@ img {
 }
 
 .anim {
-    margin: 200px;
-    display: flex;
-    align-items: center;
+    
+    grid-row: 3;
+    grid-column: 2;
     transition-delay: 0.2s;
     transition-duration: 0.5s;
     
@@ -26,16 +36,57 @@ img {
 
 .anim:hover {
     transform: scale(2);
+    transform: rotate(1turn) scale(1) ;
+    animation-name: pulse;
+     
 }
+
+@keyframes monAnimation {
+    
+    0%   { left:0px; top:0px; transform: rotate(45deg); border: color(blue);}
+    25%  { left:200px; top:0px; transform: rotate(120deg);}
+    30%  {transform: scale(1.1) rotate(170deg);}
+    50%  { left:200px; top:200px; transform: rotate(230deg);}
+    55%  {transform: scale(2) rotate(300deg);}
+    75%  { left:0px; top:200px ; transform: rotate(360deg);}
+    80%  {transform: scale(3) ;}
+    100% { left:0px; top:0px;}
+    
+
+}
+
+.anim2 {
+    grid-row: 2;
+    grid-column: 2;
+    animation-name: monAnimation;
+    animation-duration: 2s;
+    position: relative;
+    /*animation-iteration-count: infinite; */
+}
+
+.test{
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-color: red;
+    
+}
+
 
     </style>
 
 </head>
 <body>
-    <div class="anim">
-        <p>Je suis un paragraphe</p>
-    <img src="../Image/Avatar Quentin.PNG" alt="">
     
+    <div class="anim">
+    <img src="../Image/Avatar Quentin.PNG" alt="">
     </div>
+
+    <div class="anim2">
+        <img src="../Image/Avatar Quentin.PNG" alt="">
+    </div>
+
+    <div class="test"></div>
+    
 </body>
 </html>

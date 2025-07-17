@@ -4,6 +4,16 @@ body {
   font-size: 1em;
   font-family: Montserrat;
 }
+@media screen and (max-width: 600px) {
+  body {
+    background-color: red;
+    font-size: 0.8em;
+        
+}
+
+}
+
+
 
 @font-face {
   font-family: 'Montserrat';
