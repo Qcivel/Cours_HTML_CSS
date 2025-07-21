@@ -93,12 +93,11 @@ p {
     grid-row: 3;
     justify-self: center;
     gap: 30px;
-    
-   
+
 }
 .container img {
     padding: 10px;
-    width: 200px;
+    width: 400px;
     height: auto;
 }
 
@@ -107,16 +106,26 @@ footer {
     background-color: rgba(213, 190, 175, 1) ;
     height: 100%;
     width: 100%;
+
     
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
+    
+   .container img {
+        width: 300px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
     
     .images {
         display: flex;
         flex-direction: column;
-
-    
     }
 
 }
+
+
