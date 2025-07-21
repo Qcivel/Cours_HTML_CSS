@@ -20,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     background-attachment: fixed;
+    
 
 }
 
@@ -56,6 +57,7 @@ body {
 
 .navbar .menu {
     margin-left: 20px;
+    text-decoration-style: none;
 }
 
 .navbar img {
@@ -91,10 +93,13 @@ p {
     grid-row: 3;
     justify-self: center;
     gap: 30px;
+    
    
 }
 .container img {
     padding: 10px;
+    width: 200px;
+    height: auto;
 }
 
 footer {
@@ -103,4 +108,15 @@ footer {
     height: 100%;
     width: 100%;
     
+}
+
+@media screen and (max-width: 650px) {
+    
+    .images {
+        display: flex;
+        flex-direction: column;
+
+    
+    }
+
 }
