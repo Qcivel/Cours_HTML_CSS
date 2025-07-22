@@ -128,4 +128,61 @@ footer {
 
 }
 
+@media screen and (max-width: 400px) {
+    
+    body {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-attachment: fixed;
+    }
 
+    .navbar {
+        width: auto;
+        height: auto;
+        
+        
+    }
+    .container img {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        height: auto;
+    }
+    
+
+    .navbar .logo, .navbar ul  {
+        display: flex;
+        flex-direction: center;
+        font-size: 10px;
+        margin: 5px;
+        
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar .menu {
+        font-size: 10px;
+    }
+    .navbar .logo {
+        margin-left: 30px;
+    }
+    
+
+.navbar ul li img {
+    width: 10px;
+    height: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    
+}
+}
