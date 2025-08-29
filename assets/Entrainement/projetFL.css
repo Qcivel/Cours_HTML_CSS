@@ -20,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     background-attachment: fixed;
+    
 
 }
 
@@ -55,6 +56,7 @@ body {
 
 .navbar .menu {
     margin-left: 20px;
+    text-decoration-style: none;
 }
 
 .navbar img {
@@ -90,10 +92,12 @@ p {
     grid-row: 3;
     justify-self: center;
     gap: 30px;
-   
+
 }
 .container img {
     padding: 10px;
+    width: 400px;
+    height: auto;
 }
 
 footer {
@@ -101,5 +105,83 @@ footer {
     
     height: 100%;
     width: 100%;
+
     
+}
+
+@media screen and (max-width: 1000px) {
+    
+   .container img {
+        width: 300px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    
+    .images {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    
+    body {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-attachment: fixed;
+    }
+
+    .navbar {
+        width: auto;
+        height: auto;
+        
+        
+    }
+    .container img {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        height: auto;
+    }
+    
+
+    .navbar .logo, .navbar ul  {
+        display: flex;
+        flex-direction: center;
+        font-size: 10px;
+        margin: 5px;
+        
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar .menu {
+        font-size: 10px;
+    }
+    .navbar .logo {
+        margin-left: 30px;
+    }
+    
+
+.navbar ul li img {
+    width: 10px;
+    height: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    
+}
 }
